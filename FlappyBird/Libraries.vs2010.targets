@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\SDL2.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\SDL2_image.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\zlib1.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libwebp-4.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libtiff-5.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libpng16-16.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libjpeg-9.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\assimp$(PlatformArchitecture).dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\freeglut.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\SDL2_ttf.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libfreetype-6.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\SDL2_mixer.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libFLAC-8.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libmikmod-2.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libmodplug-1.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libogg-0.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libvorbis-0.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\libvorbisfile-3.dll"/>
+    <DllFiles Include="$(ProjectDir)\lib\$(PlatformShortName)\smpeg2.dll"/>
+  </ItemGroup>
+
+  <Target Name="CopyDLLs" AfterTargets="AfterLink" Inputs="@(DllFiles)" Outputs="@(DllFiles->'$(OutputPath)%(Filename)%(Extension)')">
+    <Copy SourceFiles="@(DllFiles)" DestinationFolder="$(OutputPath)"/>
+  </Target>
+
+  <Target Name="RemoveDLLs" AfterTargets="AfterClean" >
+    <Delete Files="$(OutputPath)%(DllFiles.Filename)%(DllFiles.Extension)" />
+  </Target>
+
+  <ItemGroup>
+    <Resources Include="@(Text)"/>
+    <Resources Include="@(Xml)"/>
+    <Resources Include="@(Image)"/>
+    <Resources Include="@(Font)"/>
+    <Resources Include="@(Media)"/>
+  </ItemGroup>
+
+  <Target Name="CopyResource" AfterTargets="AfterLink" Inputs="@(Resources)" Outputs="@(Resources->'$(OutputPath)%(Filename)%(Extension)')">
+    <Copy SourceFiles="@(Resources)" DestinationFolder="$(OutputPath)"/>
+  </Target>
+  <Target Name="RemoveResource" AfterTargets="AfterClean" >
+    <Delete Files="$(OutputPath)%(Resources.Filename)%(Resources.Extension)" />
+  </Target>
+
+</Project>

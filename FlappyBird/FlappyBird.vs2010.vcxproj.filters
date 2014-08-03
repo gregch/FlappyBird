@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextHover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuLogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextSwitchHover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Floor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditsMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Flappy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeInOut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeConstant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlappyFeatherParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextHover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuLogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextSwitchHover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Floor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditsMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Flappy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeInOut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeConstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlappyFeatherParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="cursor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="green-pattern.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skybox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metallic.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Dry_gras.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="_V9_Gene.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_gra.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Grey_Roc.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_wh0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="White_po.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Techno_4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_wh1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_marble0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metallic_Varnish.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_marble1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Pewter.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Dry_grass.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="_V9_GenericRock.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_gray.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Grey_Rock.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asphalt.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Metal5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_white0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="White_porcelaine.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Techno_4___Dirty.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yellow_marble2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Flat_white1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rainbow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="feather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="hint.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="panel.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="new.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FlappyBird.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FlappyBird.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Libraries.vs2010.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Flappy.TTF">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="MenuMusic.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="MenuTick.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="bridge.dae">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="point.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="die.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="bird.dae">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="pipeEnd.obj">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="pipeEnd.mtl">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="level.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
