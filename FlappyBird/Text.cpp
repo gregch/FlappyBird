@@ -1,6 +1,6 @@
 #include "Text.h"
 #include "SceneError.h"
-#include <GL/GLU.h>
+#include <GL/glu.h>
 
 const float Text::fadeTime = 0.75f;
 

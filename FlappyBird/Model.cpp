@@ -1,8 +1,9 @@
 #include "Model.h"
 #include "Texture.h"
 #include <fstream>
-#include <assimp/PostProcess.h>
-
+#include <stdexcept>
+#include <assimp/aiScene.h>
+#include <assimp/aiPostProcess.h>
 
 Model::Model():
 	scene(NULL)
@@ -48,17 +49,17 @@ void Model::reload()
 	}
 	else
 	{
-		throw std::exception(("Couldn't open file " + path + ": " + importer.GetErrorString()).c_str());
+		throw std::invalid_argument(("Couldn't open file " + path + ": " + importer.GetErrorString()).c_str());
 	}
 	scene = importer.ReadFile( path, aiProcessPreset_TargetRealtime_Quality);
 	// If the import failed, report it
 	if(!scene)
 	{
-		throw std::exception((std::string("Assimp couldn't load model: ") + std::string(importer.GetErrorString())).c_str());
+		throw std::invalid_argument((std::string("Assimp couldn't load model: ") + std::string(importer.GetErrorString())).c_str());
 	}
 
 	if (scene->HasTextures()){
-			throw std::exception("Couldn't load textures: Support for meshes with embedded textures is not implemented");
+			throw std::invalid_argument("Couldn't load textures: Support for meshes with embedded textures is not implemented");
 	}
 
 	/* getTexture Filenames and Numb of Textures */

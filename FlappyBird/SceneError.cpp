@@ -6,14 +6,14 @@
 #include <cstring>
 
 SceneError::SceneError(const char *msg):
-	exception(msg)
+	logic_error(msg)
 {
 }
 
 SceneError fromString(const string &s)
 {
 	char *message = new char[s.length() + 1];
-	strcpy_s(message, s.length()+1, s.c_str());
+	strncpy(message, s.c_str(), s.length()+1);
 	return SceneError(message);
 }
 
@@ -60,8 +60,4 @@ SceneError SceneError::fromGLError(GLenum errorEnum, const string &prefix)
 	std::stringstream ss;
 	ss << prefix << ": " << message;
 	return fromString(ss.str());
-}
-
-SceneError::~SceneError()
-{
 }

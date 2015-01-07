@@ -7,7 +7,7 @@
 #include "EditorMenu.h"
 #include "GameScene.h"
 #include "CreditsMenu.h"
-#include <GL/GLU.h>
+#include <GL/glu.h>
 
 MainMenu::MainMenu(App& parent):
 	Scene(parent),
@@ -220,17 +220,19 @@ void MainMenu::initFonts()
 
 void MainMenu::initMusic()
 {
-	int flags = MIX_INIT_MP3;
+    int flags = MIX_INIT_MP3 | MIX_INIT_OGG;
 	int initted = Mix_Init(flags);
-	if ((initted & flags) != flags) {
-		Logger::logSDLError("Mix_Init: Failed to init required support");
-		return;
-	}
-	if(Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 1024) != 0) {
+
+    if(Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 1024) != 0) {
 		Logger::logSDLError("Mix_OpenAudio: Unable to initialize audio");
 		return;
 	}
-	music = Mix_LoadMUS("MenuMusic.mp3");
+
+    if((initted & MIX_INIT_MP3) != 0){
+        music = Mix_LoadMUS("MenuMusic.mp3");
+    } else {
+        music = Mix_LoadMUS("MenuMusic.ogg");
+    }
 	if(!music) {
 		Logger::logSDLError("Mix_LoadMUS error");
 		return;

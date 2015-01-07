@@ -1,8 +1,13 @@
 #include "Logger.h"
+#include <iostream>
 #include <fstream>
 #include <ctime>
 #include <SDL.h>
-#include <Windows.h>
+
+// TODO verify 
+#ifdef ___WIN32__  
+	#include <Windows.h>
+#endif
 
 using namespace std;
 
@@ -11,18 +16,16 @@ const std::string Logger::logFileName = "log.txt";
 void Logger::log(const string& message)
 {
 	ofstream logStream;
-	logStream.open(logFileName, ios_base::app);
+	logStream.open(logFileName.c_str(), ios::app);
 	if (logStream.fail())
 		return; // don't throw an exception if log couldn't be opened
 
 	// current date/time based on current system
 	time_t now = time(0);
 	// convert now to string form
-	char *buffer = new char[256];
-	ctime_s(buffer, 256, &now);
+	char *buffer = ctime(&now);
 	string dateString = string(buffer);
 	dateString.pop_back();
-	delete buffer;
 
 	logStream << dateString << ": " << message << endl;
 	logStream.close();
@@ -37,5 +40,9 @@ void Logger::logSDLError(const string &prefix)
 
 void Logger::logError(const string &msg)
 {
+#ifdef __WIN32__
 	MessageBox(NULL, msg.c_str(), "Error", MB_OK | MB_ICONERROR);
+#else
+	cerr << "Error: " << msg << endl;
+#endif
 }

@@ -5,7 +5,7 @@
 #include "Scene.h"
 #include "SceneError.h"
 #include "SceneObject.h"
-#include <assimp/DefaultLogger.hpp>
+#include <assimp/DefaultLogger.h>
 #include <SDL_opengl.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
@@ -18,8 +18,8 @@ const std::string App::windowTitle = "FlappyBird";
 const std::string App::appIconPath = "icon.png";
 
 App::App():
-	win(nullptr),
-	ren(nullptr),
+	win(NULL),
+	ren(NULL),
 	glContext(0),
 	frameTime(0.0f),
 	nFrames(0)
@@ -77,17 +77,17 @@ int App::initWindow()
 		800, 600,
 		SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE 
 	);
-	if (win == nullptr){
+	if (win == NULL){
 		Logger::logSDLError("SDL_CreateWindow Error");
 		return 1;
 	}
 	ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-	if (ren == nullptr){
+	if (ren == NULL){
 		Logger::logSDLError("SDL_CreateRenderer Error");
 		return 1;
 	}
 	glContext = SDL_GL_CreateContext(win);
-	if(glContext == nullptr)
+	if(glContext == NULL)
 	{
 		Logger::logSDLError("SDL_GL_CreateContext Error");
 		return 1;

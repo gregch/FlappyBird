@@ -1,5 +1,5 @@
 #include "Vector3.h"
-#include <GL\GLU.h>
+#include <GL/glu.h>
 #include <sstream>
 
 const Vector3 Vector3::down     = Vector3( 0, -1,  0);

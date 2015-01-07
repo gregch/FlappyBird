@@ -115,6 +115,10 @@ bool Pipe::pastPipe() const
 	return position - Flappy::displacement.x()  + ratio * 1.1f < Flappy::birdSize / 2;
 }
 
+#ifndef _stdcall
+	#define _stdcall 
+#endif
+
 void Pipe::drawInnerPipe(RenderMode renderMode)
 {
 	void (_stdcall *cylinderFunc)(GLdouble, GLdouble, GLint, GLint) =

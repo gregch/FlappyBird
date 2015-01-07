@@ -8,6 +8,16 @@ Release
 x64/Debug
 x64/Release
 *.user
+
+# archivos de CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+*/build/FlappyBird
+
+
 # archivos de log (son al pedo)
 log.txt
 assimp_log.txt

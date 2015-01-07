@@ -1,6 +1,6 @@
 #include "Camera.h"
 #include <iostream>
-#include <GL\GLU.h>
+#include <GL/glu.h>
 
 const float Camera::minLatitude = 1.1f;
 const float Camera::maxLatitude = 1.8f;

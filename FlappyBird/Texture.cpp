@@ -1,6 +1,7 @@
 #include "Texture.h"
 #include <SDL_image.h>
-#include <GL/GLU.h>
+#include <GL/glu.h>
+#include <stdexcept>
 
 Texture::Texture():
 	textureId(0), w(0), h(0)
@@ -17,7 +18,7 @@ Texture::Texture(string path, bool lineal, bool repeat, int mipmaps)
 	SDL_Surface *surface = IMG_Load(path.c_str());
 	if(surface == NULL)
 	{
-		throw exception(("Couldn't load texture " + path).c_str());
+		throw invalid_argument(("Couldn't load texture " + path).c_str());
 	}
 	initFromSurface(surface, lineal, repeat, mipmaps);
 	SDL_FreeSurface(surface);
@@ -48,7 +49,7 @@ void Texture::initFromSurface(SDL_Surface *surface, bool lineal, bool repeat, in
 		else
 				texture_format = GL_BGR;
 	} else {
-		throw exception("Couldn't load sprite: couldn't detect texture format");
+		throw invalid_argument("Couldn't load sprite: couldn't detect texture format");
 	}
 
 	w = surface->w;
@@ -68,7 +69,7 @@ void Texture::initFromSurface(SDL_Surface *surface, bool lineal, bool repeat, in
 		glTexImage2D(GL_TEXTURE_2D, 0, nOfColors, surface->w, surface->h, 0, texture_format, GL_UNSIGNED_BYTE, surface->pixels);
 	} else {
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,  lineal ?  GL_LINEAR_MIPMAP_LINEAR : GL_LINEAR_MIPMAP_NEAREST);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER,  lineal ?  GL_LINEAR_MIPMAP_LINEAR : GL_LINEAR_MIPMAP_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER,  lineal ? GL_LINEAR : GL_NEAREST);
 		gluBuild2DMipmaps(GL_TEXTURE_2D, mipmaps, surface->w, surface->h, texture_format, GL_UNSIGNED_BYTE, surface->pixels); 
 	}
 

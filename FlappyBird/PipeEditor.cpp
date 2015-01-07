@@ -2,7 +2,7 @@
 #include "Vector3.h"
 #include <GL/freeglut.h>
 #include <sstream>
-#include <pugixml.hpp>
+#include "include/pugixml.hpp"
 
 using namespace pugi;
 const float PipeEditor::aperture = 35.0f;

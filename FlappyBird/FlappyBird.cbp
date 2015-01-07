@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="FlappyBird" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/igui/compgraf/FlappyBird/FlappyBird" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="FlappyBird">
+         <Option output="/home/igui/compgraf/FlappyBird/FlappyBird/FlappyBird" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/igui/compgraf/FlappyBird/FlappyBird" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include/SDL2" />
+            <Add directory="/usr/local/include/assimp" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 FlappyBird" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="FlappyBird/fast">
+         <Option output="/home/igui/compgraf/FlappyBird/FlappyBird/FlappyBird" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/igui/compgraf/FlappyBird/FlappyBird" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include/SDL2" />
+            <Add directory="/usr/local/include/assimp" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 FlappyBird/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/igui/compgraf/FlappyBird/FlappyBird" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/igui/compgraf/FlappyBird/FlappyBird/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/App.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Bridge.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Camera.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/CreditsMenu.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Cursor.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/EditorMenu.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FadeConstant.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FadeInOut.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Flappy.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FlappyFeatherParticleSystem.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Floor.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/GameOverPanel.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/GameScene.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Hint.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Lighting.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Logger.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Main.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/MainMenu.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/MainMenuLogo.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Model.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Options.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/OptionsMenu.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Pipe.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/PipeEditor.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/PipeLevel.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Rect.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Scene.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/SceneError.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/SceneObject.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Skybox.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Sprite.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Text.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/TextHover.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/TextSwitchHover.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Texture.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Vector3.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/pugixml.cpp">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/App.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Bridge.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Camera.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/CreditsMenu.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Cursor.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/EditorMenu.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FadeConstant.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FadeInOut.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Flappy.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/FlappyFeatherParticleSystem.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Floor.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/GameOverPanel.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/GameScene.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Hint.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Lighting.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Logger.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/MainMenu.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/MainMenuLogo.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Model.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Options.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/OptionsMenu.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Pipe.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/PipeEditor.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/PipeLevel.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Rect.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Scene.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/SceneError.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/SceneObject.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Skybox.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Sprite.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Text.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/TextHover.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/TextSwitchHover.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Texture.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/Vector3.h">
+      </Unit>
+      <Unit filename="/home/igui/compgraf/FlappyBird/FlappyBird/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

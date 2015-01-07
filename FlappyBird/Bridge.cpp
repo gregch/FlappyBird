@@ -1,5 +1,5 @@
 #include "Bridge.h"
-#include <GL\GLU.h>
+#include <GL/glu.h>
 #include <iostream>
 
 const float Bridge::modelLength = 1245;

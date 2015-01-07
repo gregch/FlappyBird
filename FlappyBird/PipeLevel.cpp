@@ -1,5 +1,5 @@
 #include "PipeLevel.h"
-#include <pugixml.hpp>
+#include "include/pugixml.hpp"
 
 using namespace pugi;
 const float PipeLevel::firstPipeDistance = 180;
@@ -12,7 +12,7 @@ PipeLevel::PipeLevel(Bridge& bridge):
 	xml_document doc;
 	xml_parse_result result = doc.load_file("level.xml");
 	if(!result){
-		throw exception("Couldn't load file ");
+		throw invalid_argument("Couldn't load file ");
 	}
 	xpath_query queryHeights("//height");
 	xpath_node_set heights = queryHeights.evaluate_node_set(doc);

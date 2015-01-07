@@ -1,5 +1,6 @@
 #include "Sprite.h"
-#include <pugixml.hpp>
+#include "include/pugixml.hpp"
+#include <stdexcept>
 
 using namespace pugi;
 
@@ -46,7 +47,7 @@ vector<Sprite> Sprite::loadFromXML(const Texture &texture, const string& xml, in
 	xml_document doc;
 	xml_parse_result result = doc.load_file(xml.c_str());
 	if(!result){
-		throw exception(("Couldn't load file " + xml + ": " + result.description()).c_str());
+		throw invalid_argument(("Couldn't load file " + xml + ": " + result.description()).c_str());
 	}
 
 	xpath_query queryFrames("//frame");

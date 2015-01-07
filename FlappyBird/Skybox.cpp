@@ -1,6 +1,6 @@
 #include "Skybox.h"
 #include "Vector3.h"
-#include <GL/GLU.h>
+#include <GL/glu.h>
 
 Skybox::Skybox(Camera *camera):
 	texture("skybox.png", true, true),

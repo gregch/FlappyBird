@@ -2,6 +2,7 @@
 #include "Vector3.h"
 #include "SceneError.h"
 #include <sstream>
+#include <stdexcept>
 #include <SDL_image.h>
 
 const float GameOverPanel::coolDownTime = 1.0f;
@@ -105,7 +106,7 @@ void GameOverPanel::enable(int currentScore)
 	SDL_Surface *panelSurface = IMG_Load("panel.png");
 	if(panelSurface == NULL)
 	{
-		throw exception("Couldn't load texture panel.png");
+		throw std::logic_error("Couldn't load texture panel.png");
 	}
 	SDL_Surface *scoreSurface = Text::getSurface(scoreFont, intToString(score), Vector3::one, 2, Vector3::zero);
 	SDL_Surface *highScoreSurface = Text::getSurface(scoreFont,  intToString(highScore), Vector3::one, 2, Vector3::zero);
@@ -137,7 +138,7 @@ void GameOverPanel::enable(int currentScore)
 		SDL_Surface *newSurface = IMG_Load("new.png");
 		if(newSurface == NULL)
 		{
-			throw exception("Couldn't load texture new.png");
+			throw std::logic_error("Couldn't load texture new.png");
 		}
 		SDL_Rect newDstRect = {
 			panelSurface->w / 2 - 35,

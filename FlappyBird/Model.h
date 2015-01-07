@@ -2,8 +2,8 @@
 
 #include <string>
 #include <map>
-#include <assimp/Importer.hpp>
-#include <assimp/Scene.h>
+#include <assimp/assimp.hpp>
+#include <assimp/aiMaterial.h>
 #include <SDL_opengl.h>
 #include "Options.h"
 
