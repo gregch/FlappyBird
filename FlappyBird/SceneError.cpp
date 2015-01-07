@@ -13,7 +13,11 @@ SceneError::SceneError(const char *msg):
 SceneError fromString(const string &s)
 {
 	char *message = new char[s.length() + 1];
+#ifdef __WINDOWS__
+	strcpy_s(message, s.length() + 1, s.c_str());
+#else
 	strncpy(message, s.c_str(), s.length()+1);
+#endif
 	return SceneError(message);
 }
 

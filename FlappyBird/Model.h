@@ -2,9 +2,15 @@
 
 #include <string>
 #include <map>
-#include <assimp/assimp.hpp>
-#include <assimp/aiMaterial.h>
 #include <SDL_opengl.h>
+#ifdef __WINDOWS__
+	#include <assimp/Importer.hpp>
+	#include <assimp/material.h>
+
+#else
+	#include <assimp/assimp.hpp>
+	#include <assimp/aiMaterial.h>
+#endif
 #include "Options.h"
 
 class Model

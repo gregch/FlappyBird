@@ -2,8 +2,13 @@
 #include "Texture.h"
 #include <fstream>
 #include <stdexcept>
-#include <assimp/aiScene.h>
-#include <assimp/aiPostProcess.h>
+#ifdef __WINDOWS__
+	#include <assimp/scene.h>
+	#include <assimp/postprocess.h>
+#else
+	#include <assimp/aiScene.h>
+	#include <assimp/aiPostProcess.h>
+#endif
 
 Model::Model():
 	scene(NULL)

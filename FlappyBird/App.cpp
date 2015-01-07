@@ -5,7 +5,11 @@
 #include "Scene.h"
 #include "SceneError.h"
 #include "SceneObject.h"
-#include <assimp/DefaultLogger.h>
+#ifdef __WINDOWS__
+	#include <assimp/DefaultLogger.hpp>
+#else
+	#include <assimp/DefaultLogger.h>
+#endif
 #include <SDL_opengl.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>

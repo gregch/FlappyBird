@@ -115,14 +115,16 @@ bool Pipe::pastPipe() const
 	return position - Flappy::displacement.x()  + ratio * 1.1f < Flappy::birdSize / 2;
 }
 
-#ifndef _stdcall
-	#define _stdcall 
-#endif
+
+#ifdef __WINDOWS__
+	typedef void (_stdcall *glutFuncType)(GLdouble, GLdouble, GLint, GLint);
+#else
+	typedef void (*glutFuncType)(GLdouble, GLdouble, GLint, GLint);
+#endif 
 
 void Pipe::drawInnerPipe(RenderMode renderMode)
 {
-	void (_stdcall *cylinderFunc)(GLdouble, GLdouble, GLint, GLint) =
-		renderMode == WIREFRAME_RENDER ? glutWireCylinder : glutSolidCylinder;
+	glutFuncType cylinderFunc = renderMode == WIREFRAME_RENDER ? glutWireCylinder : glutSolidCylinder;
 
 	glColor(Vector3::fromRGB(82,130,33));
 	glMaterial(GL_DIFFUSE, Vector3::fromRGB(82,130,33), 1);

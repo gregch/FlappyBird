@@ -4,6 +4,10 @@
 #include <ctime>
 #include <SDL.h>
 
+#ifdef __WINDOWS__
+	#include <Windows.h>
+#endif
+
 // TODO verify 
 #ifdef ___WIN32__  
 	#include <Windows.h>
@@ -23,7 +27,12 @@ void Logger::log(const string& message)
 	// current date/time based on current system
 	time_t now = time(0);
 	// convert now to string form
+#ifdef __WINDOWS__
+	char buffer[256];
+	ctime_s(buffer, sizeof(buffer), &now);
+#else
 	char *buffer = ctime(&now);
+#endif
 	string dateString = string(buffer);
 	dateString.pop_back();
 
@@ -40,7 +49,7 @@ void Logger::logSDLError(const string &prefix)
 
 void Logger::logError(const string &msg)
 {
-#ifdef __WIN32__
+#ifdef __WINDOWS__
 	MessageBox(NULL, msg.c_str(), "Error", MB_OK | MB_ICONERROR);
 #else
 	cerr << "Error: " << msg << endl;
